@@ -13,3 +13,5 @@ $ ->
         url: item_data.updateUrl
         dataType: 'json'
         data: params
+    stop: (e, ui) ->
+      ui.item.children('td').effect('highlight')
