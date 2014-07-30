@@ -15,6 +15,7 @@ gem 'high_voltage'
 gem 'slim-rails'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
