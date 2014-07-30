@@ -1,0 +1,21 @@
+h1 Listing fruits
+
+table
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    - @fruits.each do |fruit|
+      tr
+        td = fruit.name
+        td = link_to 'Show', fruit
+        td = link_to 'Edit', edit_fruit_path(fruit)
+        td = link_to 'Destroy', fruit, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Fruit', new_fruit_path

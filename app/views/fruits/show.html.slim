@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @fruit.name
+
+= link_to 'Edit', edit_fruit_path(@fruit)
+'|
+= link_to 'Back', fruits_path
