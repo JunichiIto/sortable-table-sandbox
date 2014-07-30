@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :fruits do
+  resources :fruits, only: %i(index show) do
     put :sort
   end
 

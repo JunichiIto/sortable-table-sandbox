@@ -5,17 +5,9 @@ table.table.table-bordered.table-sortable
     tr
       th Name
       th
-      th
-      th
 
   tbody
     - @fruits.each do |fruit|
       tr.item(data = { model_name: fruit.class.name.underscore, update_url: fruit_sort_path(fruit) })
         td = fruit.name
         td = link_to 'Show', fruit
-        td = link_to 'Edit', edit_fruit_path(fruit)
-        td = link_to 'Destroy', fruit, data: {:confirm => 'Are you sure?'}, :method => :delete
-
-br
-
-= link_to 'New Fruit', new_fruit_path
