@@ -1,0 +1,8 @@
+production:
+  app: sotable-table-sandbox
+  stack: cedar
+  config:
+    BUNDLE_WITHOUT: "development:test"
+  addons:
+    - heroku-postgresql
+    - papertrail
