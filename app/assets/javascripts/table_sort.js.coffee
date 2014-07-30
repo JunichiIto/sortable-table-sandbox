@@ -13,5 +13,10 @@ $ ->
         url: item_data.updateUrl
         dataType: 'json'
         data: params
+    start: (e, ui) ->
+      tableWidth = $(this).width()
+      cells = ui.item.children('td')
+      widthForEachCell = tableWidth / cells.length + 'px'
+      cells.css('width', widthForEachCell)
     stop: (e, ui) ->
       ui.item.children('td').effect('highlight')
