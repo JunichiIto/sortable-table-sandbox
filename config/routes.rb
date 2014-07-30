@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :fruits
+  resources :fruits do
+    put :sort
+  end
 
   root to: 'fruits#index'
 end
