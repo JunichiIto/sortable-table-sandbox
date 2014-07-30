@@ -4,7 +4,7 @@ class FruitsController < ApplicationController
   # GET /fruits
   # GET /fruits.json
   def index
-    @fruits = Fruit.all
+    @fruits = Fruit.rank(:row_order)
   end
 
   # GET /fruits/1
