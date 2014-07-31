@@ -23,3 +23,12 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.2'
+  gem 'factory_girl_rails', '~> 4.4.1'
+end
+group :test do
+  gem 'capybara', '~> 2.4.1'
+  gem 'poltergeist', '~> 1.5.1'
+  gem 'database_cleaner'
+end
