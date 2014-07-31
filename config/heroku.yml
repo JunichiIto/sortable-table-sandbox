@@ -1,5 +1,5 @@
 production:
-  app: sotable-table-sandbox
+  app: sortable-table-sandbox
   stack: cedar
   config:
     BUNDLE_WITHOUT: "development:test"
