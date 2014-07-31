@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Fruit do
   it 'returns name' do
-    fruit = Fruit.new(name: 'Apple')
-    expect(fruit.name).to eq 'Apple'
+    fruit = build :fruit, name: 'Banana'
+    expect(fruit.name).to eq 'Banana'
   end
 end
