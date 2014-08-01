@@ -12,5 +12,12 @@ describe Fruit do
     it 'orders by registration' do
       expect(Fruit.rank(:row_order)).to eq [apple, banana, orange]
     end
+    it 'changes order' do
+      expect{
+        orange.update_attribute :row_order_position, 0
+      }.to change{
+        Fruit.rank(:row_order).to_a
+      }.from([apple, banana, orange]).to([orange, apple, banana])
+    end
   end
 end
