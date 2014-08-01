@@ -14,7 +14,7 @@ describe Fruit do
     end
     it 'changes order' do
       expect{
-        orange.update_attribute :row_order_position, 0
+        orange.update_attribute :row_order_position, :first
       }.to change{
         Fruit.rank(:row_order).to_a
       }.from([apple, banana, orange]).to([orange, apple, banana])
