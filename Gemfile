@@ -18,7 +18,7 @@ gem 'jquery-turbolinks'
 gem 'unicorn'
 gem 'rake', '< 11.0'
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18'
   gem 'rails_12factor'
 end
 group :development do

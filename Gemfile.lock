@@ -96,7 +96,7 @@ GEM
     multi_json (1.14.1)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
-    pg (1.2.2)
+    pg (0.21.0)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.6.13)
@@ -195,7 +195,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   jquery-ui-rails
-  pg
+  pg (~> 0.18)
   quiet_assets
   rails (~> 4.2.0)
   rails_12factor
