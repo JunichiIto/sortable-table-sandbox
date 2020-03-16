@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Rails.application.config.session_store :cookie_store, key: '_sortable-table-sandbox_session'
+Rails.application.config.session_store :cookie_store, key: '_sortable_table_sandbox_session'
