@@ -16,7 +16,7 @@ gem 'slim-rails'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
