@@ -36,13 +36,16 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.4)
+    autoprefixer-rails (9.7.4)
+      execjs
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.2.0.4)
-      sass (~> 3.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -71,6 +74,7 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     high_voltage (2.2.1)
@@ -165,6 +169,8 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    sassc (2.2.1)
+      ffi (~> 1.9)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -211,7 +217,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass (~> 3.2.0)
+  bootstrap-sass (~> 3.4.1)
   capybara (~> 2.4.1)
   coffee-rails (~> 4.0.0)
   database_cleaner
