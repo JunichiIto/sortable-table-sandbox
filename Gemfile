@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
-gem 'rails', '4.1.4'
+ruby '2.5.7'
+gem 'rails', '~> 4.2.0'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -10,12 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'high_voltage'
 gem 'slim-rails'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
+gem 'rake', '< 11.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -30,6 +31,6 @@ group :development, :test do
 end
 group :test do
   gem 'capybara', '~> 2.4.1'
-  gem 'poltergeist', '~> 1.5.1'
+  gem 'poltergeist'
   gem 'database_cleaner'
 end
